@@ -15,28 +15,6 @@ export default class Images extends React.Component{
         
         return(
 <div className='images'>
-<div className='row'>
-    <div className='column'>
-      <div className='column1'>
-     <a href='https://pixabay.com/photos/corn-bread-loaf-fresh-bread-maize-738244/'>
-     <img src={cornBread} className='img' /></a> 
-      
-      </div>
-    </div>
-    <div className='column'>
-      <div className='column1'>
-      <a href='https://pixabay.com/photos/piza-food-cheese-plate-lunch-3010062/'>
-      <img src={piza} className='img' /></a>
-      </div>
-    </div>
-    <div className='column'>
-      <div className='column1'>
-      <a href='https://pixabay.com/photos/laksa-popular-famous-coconut-lunch-1731121/'> 
-      <img src={currystew} className='img' /> </a>
-      </div>
-    </div>
-  </div>
-
   <div className='row'>
     <div className='column'>
       <div className='column1'>
@@ -76,10 +54,32 @@ export default class Images extends React.Component{
      <div className='column1'> 
      <a href='https://pixabay.com/photos/bread-croissant-morning-puff-paste-1284438/'>  
      <img src={bread} className='img' /></a>
-      
       </div>
     </div>
   </div>
+
+  <div className='row'>
+    <div className='column'>
+      <div className='column1'>
+     <a href='https://pixabay.com/photos/corn-bread-loaf-fresh-bread-maize-738244/'>
+     <img src={cornBread} className='img' /></a> 
+      
+      </div>
+    </div>
+    <div className='column'>
+      <div className='column1'>
+      <a href='https://pixabay.com/photos/piza-food-cheese-plate-lunch-3010062/'>
+      <img src={piza} className='img' /></a>
+      </div>
+    </div>
+    <div className='column'>
+      <div className='column1'>
+      <a href='https://pixabay.com/photos/laksa-popular-famous-coconut-lunch-1731121/'> 
+      <img src={currystew} className='img' /> </a>
+      </div>
+    </div>
+  </div>
+
 </div>
         )
     }
