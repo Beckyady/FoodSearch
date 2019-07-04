@@ -3,7 +3,7 @@ import './App.css';
 import FFO from './ffo';
 import ImageResult from './ImageResult';
 import Error from './Error'
-import Search from './search';
+
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 

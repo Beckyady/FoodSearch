@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import PropTypes from 'prop-types';
 import GridList from '@material-ui/core/GridList';
-import GridListTile  from '@material-ui/core/GridListTile';
+import GridListTile from '@material-ui/core/GridListTile';
 //  import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
 

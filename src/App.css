@@ -29,16 +29,16 @@
  .spanDiv{
  color:white;
  text-align: center;
- padding-top: 150px;
+ padding-top: 60px;
  
  }
 .span1{
   font-weight:bolder;
-  font-size: calc(40px + 3vmin);
+  font-size: calc(15px + 1vmin);
 }
 .span2{
   font-weight:bolder;
-  font-size: calc(20px + 2vmin);
+  font-size: calc(10px + 1vmin);
 }
 
 .App-header {
@@ -88,8 +88,9 @@
   align-self: center;
 }
 .search {
-  margin-top:80px;
- margin-left: 300px;
+    margin-top:80px; 
+  margin-left: 80px;  
+ 
 }
 
 .firstRow{
