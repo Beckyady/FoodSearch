@@ -16,11 +16,21 @@ export default class Search extends React.Component{
    
 onTextChange =  (e) =>{
   this.setState({[e.target.name]:e.target.value}, () =>{
-    axios.get(`${this.state.apiUrl}filter.php?a=${this.state.searchText}`)
     axios.get(`${this.state.apiUrl}search.php?s=${this.state.searchText}`)
     .then(res => {
-      let images = (!res.data.meals) ? [] : res.data.meals; 
-      this.setState({images:images})
+      if (res.data.meals) {
+          let images = res.data.meals;
+          return this.setState({images});
+      }
+      
+      return axios.get(`${this.state.apiUrl}filter.php?a=${this.state.searchText}`)
+      .then(res => {
+        if (res.data.meals) {
+          let images = res.data.meals;
+          return this.setState({images});
+        }
+        return this.setState({images: []})
+      })
     })
     .catch(err => console.log(err))
   })
@@ -37,7 +47,8 @@ onTextChange =  (e) =>{
         </form>
         <div >
         <GridList className='scroll' cols={3}>
-        {this.state.images.length > 0 ?(<ImageResult images={this.state.images}/>):null}
+        
+          {this.state.images.length > 0 ?(<ImageResult images={this.state.images}/>):null}
         
          </GridList>
 
