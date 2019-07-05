@@ -17,8 +17,8 @@ export default class ImageResult extends React.Component{
                  {images.map(img =>(
                         <GridListTile
                             title={img.strMeal}
-                            key={img.idMeal} 
-                        >
+                            category={img.strCategory}
+                            >
                             <img src={img.strMealThumb}/>
                         </GridListTile>
                     ))} 

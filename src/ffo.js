@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Search from './search';
 import Images from './images'
+import Footer from './footer'
 
 
 export default class FFO extends React.Component{
@@ -23,7 +24,7 @@ render(){
         </div>
         </div>
         <div style={imgBody}> <Images/></div>
-       
+       <Footer/> 
         </div>
       
     )
