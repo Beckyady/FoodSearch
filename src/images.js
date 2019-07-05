@@ -15,8 +15,9 @@ export default class Images extends React.Component{
         
         return(
 <div className='images'>
-    <div className='row'>
-      <div className='column'>
+
+    <div className='row1'>
+    <div className='column'>
         <a href='https://pixabay.com/photos/laksa-popular-famous-coconut-lunch-1731121/'> 
           <img src={laksa} className='img' /></a>
       </div>
@@ -32,7 +33,7 @@ export default class Images extends React.Component{
         </div>
       </div>
 
-      <div className='row'>
+      <div className='row1'>
         <div className='column'>
           <a href='https://pixabay.com/photos/sushi-eat-japanese-asia-food-rice-491425/'> 
           <img src={sushi} className='img' /> </a>
@@ -49,7 +50,7 @@ export default class Images extends React.Component{
       </div>
         </div>
 
-    <div className='row'>
+    <div className='row1'>
       <div className='column'>
           <a href='https://pixabay.com/photos/corn-bread-loaf-fresh-bread-maize-738244/'>
         <img src={cornBread} className='img' /></a> 

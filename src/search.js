@@ -35,9 +35,10 @@ onTextChange =  (e) =>{
         <input type="text" name='searchText' onChange={this.onTextChange} value={this.state.searchText} className="form-control" placeholder="Search here for food"/>
             </div>
         </form>
-        <div className='scroll'>
-        <GridList cols={3}>
+        <div >
+        <GridList className='scroll' cols={3}>
         {this.state.images.length > 0 ?(<ImageResult images={this.state.images}/>):null}
+        
          </GridList>
 
         </div>
