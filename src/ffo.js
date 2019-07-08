@@ -1,8 +1,10 @@
 import React from 'react';
 import './App.css';
-import Search from './search';
-import Images from './images'
-import Footer from './footer'
+// import Search from './search';
+import Navigation from './Navbar/navbar'
+// import Images from './images'
+
+import Home from './Home/Home';
 
 
 export default class FFO extends React.Component{
@@ -13,18 +15,17 @@ render(){
     return(
         <div className='App'>
         <div className='bg'>
-        <div className='overlay'>
-        <div className='spanDiv'><span className='span1'>Welcome to F.F.O</span><br></br>
-        <span className='span2'>A home of quality food...</span></div>
-        <p>
-            <Search/>
+        <div className=''>
+        // <Navigation/>
+        // <Home/>
+        // <Footer/>
 
-</p>
-       
+        {/* <div style={imgBody}> <Images/></div>
+       <Footer/>  */}
+      
         </div>
         </div>
-        <div style={imgBody}> <Images/></div>
-       <Footer/> 
+        
         </div>
       
     )

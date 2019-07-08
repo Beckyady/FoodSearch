@@ -68,6 +68,7 @@ export default class Images extends React.Component{
         </div>
       
     </div>
+    
 
 </div>
         )

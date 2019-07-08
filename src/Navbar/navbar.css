@@ -1,0 +1,44 @@
+.navbody{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 0.8%;
+    /* width:70%; */
+    
+    
+}
+.nav{
+    display: flex;
+    /* justify-content: flex-end; */
+    justify-content: space-evenly;
+}
+
+.navlogo{
+    display: flex;
+}
+.logo{
+    width:80px;
+    height: 40px;
+}
+.search {
+    margin-top:7px;
+    border-radius: 6px; 
+}
+
+.searchFood{
+    width: 140px;
+    height:30px;
+    background-color: #5F9EA0;
+    color:white;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 5%;
+    font-weight: 900px;
+    cursor: pointer;
+}
+.Navbar{
+    background-color:  rgb(218, 237, 238); 
+}
+
+.nav{
+    color: #5F9EA0;
+} 

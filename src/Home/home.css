@@ -1,0 +1,38 @@
+.homebody{
+    display: flex;
+    margin-top: 2.7%;
+    margin-bottom: 12%;
+    justify-content: space-around;
+    color:black;
+    /* font-weight:bolder; */
+}
+
+.span1{
+    font-weight:bolder;
+    font-size: calc(30px + 2vmin);
+  }
+  .span2{
+    font-weight:bolder;
+    font-size: calc(15px + 1vmin);
+  }
+  .orangespan{
+      color: #5F9EA0;
+      font-weight:bold;
+      font-size: 18px;
+  }
+  .more{
+      width: 160px;
+      height:20px;
+      background-color: #5F9EA0;
+      color:white;
+      border-radius: 8px;
+      text-align: center;
+      margin-top: 5%;
+      font-weight: 900px;
+      cursor: pointer;
+  }
+  .bodyimg{
+      /* width: 3px; */
+      height: 30px;
+
+  }

@@ -1,11 +1,11 @@
 import React from 'react';
 import axios from 'axios';
-import './App.css';
-import { Button } from 'react-bootstrap';
-import ImageResult from './ImageResult';
+import '../App.css';
+import './search.css';
 import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
-import { MDBCol, MDBIcon } from "mdbreact";
+import ImageResult from '../ImageResult';
+// import GridListTile from '@material-ui/core/GridListTile';
+// import { MDBCol, MDBIcon } from "mdbreact";
 
 export default class Search extends React.Component{
  state = {
@@ -39,25 +39,33 @@ onTextChange =  (e) =>{
    console.log(this.state.images)
 
     return(
-<div className='col-md-6 search'>
-       <form>
+      <div className='bdy'>
+         <div className='searchimg'>
+        <div className=' overlay'> 
+        <div className='inputdiv'>
+         <form>
         <div class="input-group">
-        <input type="text" name='searchText' onChange={this.onTextChange} value={this.state.searchText} className="form-control" placeholder="Search here for food"/>
+        <input type="text" name='searchText' onChange={this.onTextChange} value={this.state.searchText} 
+        className="form-control" placeholder="Search for food by name or country"/>
             </div>
         </form>
-        <div >
-        <GridList className='scroll' cols={3}>
-        
-          {this.state.images.length > 0 ?(<ImageResult images={this.state.images}/>):null}
-        
-         </GridList>
-
+        </div> 
+         </div>
         </div>
-        
 
-          
+      <div className='result'>
+      <GridList className='scroll' cols={3}>
+        
+        {this.state.images.length > 0 ?(<ImageResult images={this.state.images}/>):null}
+     
+       </GridList>
+         
+
       </div>
+      </div>
+      
     );
       }
     }
    
+     

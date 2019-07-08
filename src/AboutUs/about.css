@@ -1,0 +1,49 @@
+
+.imgbg {
+    text-align: center;
+    background-image: url('./bean.jpg');
+    height: 25vh;
+    /* width: 100%; */
+    align-content: center;
+    background-size: 'cover'; 
+    background-repeat: 'no-repeat';
+    margin: 0 auto;
+    color: antiquewhite;
+    
+     }
+
+ .overlay{
+    height: 25vh;
+    width: 100%;
+    padding-top: 45px;
+    background: linear-gradient(
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+    ) 
+    
+   }
+
+   .body{
+       margin-top: 6%;
+       display: flex;
+       text-align: left;
+       justify-content: space-around;
+       margin-bottom: 0.9%;
+   }
+   .imgflex{
+       display: flex;
+       
+   }
+   .imgg{
+       border-radius: 6px;
+       width:400px;
+       height: 300px;
+   }
+   .spann{
+    color:#5F9EA0;
+    /* font-weight: 400; */
+    font-family: 'Cookie',cursive;
+   }
+
+
+ /* sizes="(max-width: 700px) 100vw, 700px" width="700" height="520"> */
