@@ -15,7 +15,8 @@
  .overlay{
     height: 25vh;
     width: 100%;
-    padding-top: 45px;
+    padding-top: 40px;
+    padding-right: 5%;
     background: linear-gradient(
       rgba(0,0,0,0.5),
       rgba(0,0,0,0.5)
@@ -23,27 +24,40 @@
     
    }
 
-   .body{
+.body{
        margin-top: 6%;
        display: flex;
        text-align: left;
        justify-content: space-around;
        margin-bottom: 0.9%;
-   }
-   .imgflex{
+}
+.imgflex{
        display: flex;
        
-   }
-   .imgg{
+}
+.imgg{
        border-radius: 6px;
        width:400px;
        height: 300px;
-   }
-   .spann{
+}
+
+.spann{
     color:#5F9EA0;
     /* font-weight: 400; */
     font-family: 'Cookie',cursive;
-   }
+    width: 113%;
+    height: 113%;
+    background-color: rgb(218, 237, 238); 
+}
+   
+.spaniv{
+    text-align: left;
+    padding-top: 35px;
+    padding-left: 58px;
+    width: 51%;
+    height: 114%;
+    background-color: rgb(218, 237, 238); 
+    
+    }
 
-
- /* sizes="(max-width: 700px) 100vw, 700px" width="700" height="520"> */
+ 

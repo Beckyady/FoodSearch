@@ -7,7 +7,7 @@ import cabbage from './cabbage.jpg';
 function Home() {
     return(
         <div className='homebody'>
-            <div>
+            <div >
             <div className='spanDiv'>
             <span className='orangespan'>Food Services</span><br></br>
             <span className='span1'>Welcome to F.F.O</span><br></br>

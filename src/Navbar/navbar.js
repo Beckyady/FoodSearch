@@ -13,21 +13,21 @@ return(
     
     <div><img src={logo} alt='logo' className='logo' /></div>
     <Navbar className='Navbar'  expand='lg' >
-    <div className=" nav" >
-    <Nav >
-      <Nav.Item >
-        <Nav.Link href="/">Home</Nav.Link>
-      </Nav.Item>
-      <Nav.Item >
-        <Nav.Link href="/about">About Us</Nav.Link>
-      </Nav.Item>
+    <div className="nav" >
+      <Nav >
         <Nav.Item >
-        <Nav.Link href="/gallery">Gallery</Nav.Link>
-      </Nav.Item>
-      <Nav.Item >
-        <Nav.Link href="/search">Search for food</Nav.Link>
-      </Nav.Item>
-    </Nav>
+          <Nav.Link href="/">Home</Nav.Link>
+        </Nav.Item>
+        <Nav.Item >
+          <Nav.Link href="/about">About Us</Nav.Link>
+        </Nav.Item>
+          <Nav.Item >
+          <Nav.Link href="/gallery">Gallery</Nav.Link>
+        </Nav.Item>
+        <Nav.Item >
+          <Nav.Link href="/search">Search for food</Nav.Link>
+        </Nav.Item>
+      </Nav>
     </div>
     </Navbar>
     <div >

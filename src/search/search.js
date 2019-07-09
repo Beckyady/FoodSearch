@@ -4,8 +4,8 @@ import '../App.css';
 import './search.css';
 import GridList from '@material-ui/core/GridList';
 import ImageResult from '../ImageResult';
+import {DropdownButton, InputGroup, Dropdown, Input, MenuItem} from 'react-bootstrap'
 // import GridListTile from '@material-ui/core/GridListTile';
-// import { MDBCol, MDBIcon } from "mdbreact";
 
 export default class Search extends React.Component{
  state = {
@@ -30,6 +30,7 @@ onTextChange =  (e) =>{
           return this.setState({images});
         }
         return this.setState({images: []})
+         
       })
     })
     .catch(err => console.log(err))
@@ -41,22 +42,31 @@ onTextChange =  (e) =>{
     return(
       <div className='bdy'>
          <div className='searchimg'>
-        <div className=' overlay'> 
+        <div className=' overlayy'> 
         <div className='inputdiv'>
          <form>
         <div class="input-group">
         <input type="text" name='searchText' onChange={this.onTextChange} value={this.state.searchText} 
         className="form-control" placeholder="Search for food by name or country"/>
+        
             </div>
+        
         </form>
+        
         </div> 
          </div>
         </div>
 
       <div className='result'>
       <GridList className='scroll' cols={3}>
-        
-        {this.state.images.length > 0 ?(<ImageResult images={this.state.images}/>):null}
+       
+        {this.state.images.length > 0 ?(<ImageResult images={this.state.images}/>):
+        <div >
+          <span className='nullresponse'>
+            <h3>Search not found</h3>
+            
+          </span>
+        </div>}
      
        </GridList>
          
@@ -69,3 +79,4 @@ onTextChange =  (e) =>{
     }
    
      
+    // return this.setState({images: []})

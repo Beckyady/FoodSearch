@@ -6,7 +6,15 @@
     color:black;
     /* font-weight:bolder; */
 }
-
+.spanDiv{
+    text-align: left;
+    padding-top: 45px;
+    padding-left: 53px;
+    width: 113%;
+    height: 113%;
+    background-color: rgb(218, 237, 238); 
+    
+    }
 .span1{
     font-weight:bolder;
     font-size: calc(30px + 2vmin);
@@ -22,12 +30,13 @@
   }
   .more{
       width: 160px;
-      height:20px;
+      height:43px;
       background-color: #5F9EA0;
       color:white;
       border-radius: 8px;
       text-align: center;
       margin-top: 5%;
+      padding-top: 11.5px;
       font-weight: 900px;
       cursor: pointer;
   }
@@ -36,3 +45,4 @@
       height: 30px;
 
   }
+  

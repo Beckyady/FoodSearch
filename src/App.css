@@ -8,27 +8,11 @@
   text-align: center;
   background-image: url('./assets/background.jpg');
   height: auto;
-  /* width: 100%; */
   align-content: center;
   background-size: 'cover'; 
   background-repeat: 'no-repeat';
   margin: 0 auto;
    }
-
-
- .spanDiv{
- text-align: left;
- padding-top: 50px;
- 
- }
- /* .span1{
-  font-weight:bolder;
-  font-size: calc(30px + 2vmin);
-}
-.span2{
-  font-weight:bolder;
-  font-size: calc(15px + 1vmin);
-} */
 
 .App-header {
   
@@ -42,6 +26,8 @@
 .firstRow{
   margin-right: 30px;
 }
+
+
 .footer{
   padding-top:15px;
   padding-left:200px;
@@ -53,6 +39,5 @@
   background-color:#5F9EA0;
   min-height: 7vh;
   width: 100%;
-  cursor: pointer;
   justify-content: space-between;
 }
